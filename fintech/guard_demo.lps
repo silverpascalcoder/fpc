@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="guard_demo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="20" Y="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="argcheck.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ArgCheck"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="82"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../fpc-laz4/fpcsrc/rtl/unix/classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="40"/>
+        <CursorPos X="8" Y="55"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../fpc-laz4/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="137"/>
+        <CursorPos X="9" Y="135"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../fpc-laz4/fpcsrc/rtl/objpas/sysutils/sysutilh.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="256"/>
+        <CursorPos X="4" Y="226"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="8">
+      <Position>
+        <Filename Value="../../../fpc-laz4/fpcsrc/rtl/unix/classes.pp"/>
+        <Caret Line="55" Column="8" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="argcheck.pas"/>
+        <Caret Line="32" Column="18" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="guard_demo.lpr"/>
+        <Caret Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="argcheck.pas"/>
+        <Caret Line="78" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="argcheck.pas"/>
+        <Caret Line="37" Column="5" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="argcheck.pas"/>
+        <Caret Line="33" Column="77" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="guard_demo.lpr"/>
+        <Caret Line="46" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="guard_demo.lpr"/>
+        <Caret Line="9"/>
+      </Position>
+      <Position>
+        <Filename Value="guard_demo.lpr"/>
+        <Caret Line="36" Column="42" TopLine="20"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="guard_demo.lpr"/>
+        <Line Value="9"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>
