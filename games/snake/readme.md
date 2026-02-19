@@ -1,7 +1,7 @@
 # Snake Game in Free Pascal (Linux, ncurses)
 
 A small, retro‑style Snake game written in **Free Pascal** using **ncurses**.  
-Built as a fun 15‑minute project to show that Pascal is still clean, capable, and enjoyable — even for interactive, real‑time programs.
+Built as a fun 15‑minute project to show that Pascal is still clean, capable, and enjoyable.
 
 This project also reflects three pillars I care about:
 
