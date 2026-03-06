@@ -7,16 +7,13 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs,
   ExtCtrls, StdCtrls, LCLType, LCLIntf,
-  uAssets;  // TAssetManager, TSprite
+  uAssets, UHighScore, UGameUtils;  // TAssetManager, TSprite
 
-const
-  TILE_SIZE = 32;
-  GRID_W = 20;
-  GRID_H = 20;
-  FORM_W = GRID_W * TILE_SIZE;
-  FORM_H = GRID_H * TILE_SIZE + 60;  // extra for score bar
+
 
 type
+
+  TGameState = (gsMenu, gsPaused, gsPlaying, gsGameOver, gsHighScores);
 
   { TMainForm }
 
@@ -37,11 +34,13 @@ type
     FFood: TPoint;
     FScore: integer;
     FHighScore: integer;
-    FGameOver: boolean;
-    FPaused: boolean;
-    FStarted: boolean;
+    FHighScores: THighScoreList;
+    FState: TGameState;
 
+    procedure CheckHighScores;
     procedure DrawBMPTile(ABMP: TBitmap; ACol, ARow: integer);
+    procedure DrawHallOfFame;
+    procedure DrawOverlay(const AHeader, ASubText: string);
     procedure DrawTile(ASprite: TSprite; ACol, ARow: integer);
     procedure InitGame;
     procedure PlaceFood;
@@ -82,6 +81,9 @@ begin
   FAssets.Load;
 
   FHighScore := 0;
+  FHighScores := THighScoreList.Create(10);
+  FHighScores.Load;
+
   InitGame;
 
   Timer1.Interval := 400; //140;
@@ -102,9 +104,6 @@ procedure TMainForm.InitGame;
 var
   Mid: integer;
 begin
-  FGameOver := False;
-  FPaused := False;
-  FStarted := False;
   FScore := 0;
   FDirection := dirRight;
   FNextDir := dirRight;
@@ -139,6 +138,20 @@ begin
   Result := False;
 end;
 
+procedure TMainForm.CheckHighScores;
+var
+  LName: string;
+begin
+  if FHighScores.IsQualified(FScore) then
+  begin
+    LName := InputBox('New High Score!',
+      'Unexpectedly competent. Name?', 'Player');
+    FHighScores.AddScore(LName, FScore);
+    FHighScores.Save;
+  end;
+  FState := gsGameOver;
+end;
+
 procedure TMainForm.MoveSnake;
 var
   NewHead: TPoint;
@@ -158,7 +171,7 @@ begin
   if (NewHead.X < 0) or (NewHead.X >= GRID_W) or
     (NewHead.Y < 0) or (NewHead.Y >= GRID_H) then
   begin
-    FGameOver := True;
+    CheckHighScores;
     Exit;
   end;
 
@@ -168,7 +181,7 @@ begin
   for I := 0 to Len - 2 do
     if FSnake[I] = NewHead then
     begin
-      FGameOver := True;
+      CheckHighScores;
       Exit;
     end;
 
@@ -237,7 +250,8 @@ begin
   // Each case corresponds to one of the four possible turns.
 
   // Turn from left > down, or up > right  (top-left corner)
-  if ((DXi = -1) and (DYo = 1)) then
+  if ((DXi = -1) and (DYo = 1)) or
+     ((DYi = -1) and (DXo = 1)) then
     Exit(spBodyTL);
 
   // Turn from right > down, or up > left  (top-right corner)
@@ -251,7 +265,8 @@ begin
     Exit(spBodyBL);
 
   // Turn from right > up, or down > left  (bottom-right corner)
-  if ((DXi = 1) and (DYo = -1)) then
+  if ((DXi = 1) and (DYo = -1)) or
+     ((DYi = 1) and (DXo = -1)) then
     Exit(spBodyBR);
 
   // Fallback: treat as horizontal if something unexpected occurs.
@@ -298,6 +313,84 @@ begin
   DrawBMPTile(FAssets.GetHeadSprite(FDirection), FSnake[0].X, FSnake[0].Y);
 end;
 
+procedure TMainForm.DrawOverlay(const AHeader, ASubText: string);
+var
+  LCanvas: TCanvas;
+begin
+  LCanvas := FBuffer.Canvas;
+
+  // 1. Draw the semi-transparent "dimmer"
+  // We use a dark brush with a pattern or just a solid dark fill
+  LCanvas.Brush.Color := clBlack;
+  LCanvas.Brush.Style := bsSolid;
+  // This gives that "focused" look over the grid
+  LCanvas.Rectangle(40, 100, FORM_W - 40, FORM_H - 100);
+
+  // 2. Header text
+  LCanvas.Font.Color := clWhite;
+  LCanvas.Font.Size := 24;
+  LCanvas.Font.Style := [fsBold];
+  LCanvas.Brush.Style := bsClear;
+  CenterText(LCanvas, 140, AHeader);
+
+  // 3. Sub-text (instructions)
+  LCanvas.Font.Size := 12;
+  LCanvas.Font.Style := [];
+  // Handling the sLineBreak if passed in ASubText
+  LCanvas.TextOut(CenterTextX(LCanvas, ASubText), 220, ASubText);
+end;
+
+procedure TMainForm.DrawHallOfFame;
+var
+  LCanvas: TCanvas;
+  i: Integer;
+  LText, LScoreStr: string;
+  YPos: Integer;
+begin
+  LCanvas := FBuffer.Canvas;
+
+  // Background Box
+  LCanvas.Brush.Color := $1A1A1A; // Deep charcoal
+  LCanvas.FillRect(20, 80, FORM_W - 20, FORM_H - 40);
+
+  // Header
+  LCanvas.Font.Color := $00FFCC; // Minty green for that retro look
+  LCanvas.Font.Size := 20;
+  LCanvas.Font.Style := [fsBold];
+  CenterText(LCanvas, 100, 'TOP 10 SLITHERS');
+
+  // Table Headers
+  LCanvas.Font.Size := 10;
+  LCanvas.Font.Color := clGray;
+  LCanvas.TextOut(60, 140, 'PLAYER');
+  LCanvas.TextOut(FORM_W - 120, 140, 'SCORE');
+
+  LCanvas.Pen.Color := clGray;
+  LCanvas.MoveTo(60, 160);
+  LCanvas.LineTo(FORM_W - 60, 160);
+
+  // List Entries
+  LCanvas.Font.Color := clWhite;
+  YPos := 175;
+
+  for i := 0 to High(FHighScores.Entries) do
+  begin
+    LText := Format('%2d. %s', [i + 1, FHighScores.Entries[i].PlayerName]);
+    LScoreStr := IntToStr(FHighScores.Entries[i].Score);
+
+    LCanvas.TextOut(60, YPos, LText);
+    // Right-align the score
+    LCanvas.TextOut(FORM_W - 60 - LCanvas.TextWidth(LScoreStr), YPos, LScoreStr);
+
+    Inc(YPos, 22);
+  end;
+
+  // Footer
+  LCanvas.Font.Size := 9;
+  LCanvas.Font.Color := clYellow;
+  CenterText(LCanvas, FORM_H - 70, 'Press H to return to game');
+end;
+
 procedure TMainForm.DrawGame;
 
 const
@@ -308,37 +401,6 @@ const
   S_ResumeGame = 'Press SPACE to resume';
   S_GameOver = 'GAME OVER';
   S_PlayAgain = 'Press SPACE to play again';
-
-  procedure DrawGameHeader(ACanvas: TCanvas);
-  begin
-    ACanvas.Brush.Color := $AA000000;
-    ACanvas.FillRect(0, 60, FORM_W, FORM_H);
-  end;
-
-  function CenterTextX(ACanvas: TCanvas; const AString: string): integer;
-  begin
-    Result := (FORM_W - ACanvas.TextWidth(AString)) div 2;
-  end;
-
-  procedure CenterText(ACanvas: TCanvas; AY: integer; const AString: string);
-  begin
-    ACanvas.TextOut(CenterTextX(ACanvas, AString), AY, AString)
-  end;
-
-  procedure SetFontHeader(ACanvas: TCanvas);
-  begin
-    ACanvas.Font.Color := clWhite;
-    ACanvas.Font.Size := 22;
-    ACanvas.Font.Style := [fsBold];
-  end;
-
-  procedure SetFontSmall(ACanvas: TCanvas);
-  begin
-    ACanvas.Font.Color := clWhite;
-    ACanvas.Font.Size := 12;
-    ACanvas.Font.Style := [];
-  end;
-
 
 var
   C, R, I, Len: integer;
@@ -368,33 +430,11 @@ begin
   // Snake: tail -> body -> head
   DrawSnake;
 
-  // Overlays
-  if not FStarted then
-  begin
-    DrawGameHeader(LCanvas);
-    SetFontHeader(LCanvas);
-    CenterText(LCanvas, 120, S_Snake);
-    SetFontSmall(LCanvas);
-    CenterText(LCanvas, 180, S_StartGame);
-    CenterText(LCanvas, 210, S_Keys)
-  end
-  else if FPaused then
-  begin
-    DrawGameHeader(LCanvas);
-    SetFontHeader(LCanvas);
-    CenterText(LCanvas, 160, S_Paused);
-    SetFontSmall(LCanvas);
-    CenterText(LCanvas, 210, S_StartGame);
-  end
-  else if FGameOver then
-  begin
-    LScore := Format('Score: %d', [FScore]);
-    DrawGameHeader(LCanvas);
-    SetFontHeader(LCanvas);
-    CenterText(LCanvas, 140, S_GameOver);
-    SetFontSmall(LCanvas);
-    CenterText(LCanvas, 200, LScore);
-    CenterText(LCanvas, 230, S_PlayAgain);
+  case FState of
+    gsMenu:      DrawOverlay('SNAKE', 'Press SPACE to Start');
+    gsPaused:    DrawOverlay('PAUSED', 'Press SPACE to Resume');
+    gsGameOver:  DrawOverlay('GAME OVER', 'Sucks to be you! Space to try again.');
+    gsHighScores: DrawHallOfFame;
   end;
 end;
 
@@ -404,7 +444,7 @@ end;
 
 procedure TMainForm.Timer1Timer(Sender: TObject);
 begin
-  if FStarted and (not FPaused) and (not FGameOver) then
+  if  FState = gsPlaying then
   begin
     MoveSnake;
     Invalidate;
@@ -419,43 +459,77 @@ end;
 
 procedure TMainForm.FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
 begin
-  case Key of
-    VK_SPACE:
+  case FState of
+    { --- WE ARE AT THE START SCREEN --- }
+    gsMenu:
     begin
-      if FGameOver then
+      if Key = VK_SPACE then
       begin
-        Timer1.Interval := 140;
         InitGame;
-        FStarted := True;
+        FState := gsPlaying;
       end
-      else if not FStarted then
-        FStarted := True
-      else
-        FPaused := not FPaused;
+      else if Key = Ord('H') then
+        FState := gsHighScores;
     end;
 
-    VK_RIGHT,
-    Ord('D'):
-      if FDirection <> dirLeft then
-        FNextDir := dirRight;
+    { --- WE ARE ACTIVELY SLITHERING --- }
+    gsPlaying:
+    begin
+      case Key of
+        VK_SPACE: FState := gsPaused;
 
-    VK_LEFT,
-    Ord('A'):
-      if FDirection <> dirRight then
-        FNextDir := dirLeft;
+        VK_RIGHT, Ord('D'):
+          if FDirection <> dirLeft then FNextDir := dirRight;
 
-    VK_UP,
-    Ord('W'):
-      if FDirection <> dirDown then
-        FNextDir := dirUp;
+        VK_LEFT, Ord('A'):
+          if FDirection <> dirRight then FNextDir := dirLeft;
 
-    VK_DOWN,
-    Ord('S'):
-      if FDirection <> dirUp then
-        FNextDir := dirDown;
+        VK_UP, Ord('W'):
+          if FDirection <> dirDown then FNextDir := dirUp;
 
-    VK_ESCAPE: Close;
+        VK_DOWN, Ord('S'):
+          if FDirection <> dirUp then FNextDir := dirDown;
+      end;
+    end;
+
+    { --- GAME IS PAUSED --- }
+    gsPaused:
+    begin
+      if Key = VK_SPACE then
+        FState := gsPlaying
+      else if Key = Ord('H') then
+        FState := gsHighScores;
+    end;
+
+    { --- THE END OF THE ROAD --- }
+    gsGameOver:
+    begin
+      if Key = VK_SPACE then
+      begin
+        InitGame;
+        FState := gsPlaying;
+      end
+      else if Key = Ord('H') then
+        FState := gsHighScores;
+    end;
+
+    { --- VIEWING THE LEADERBOARD --- }
+    gsHighScores:
+    begin
+      // Return to Menu or Game Over screen when 'H' or ESC is pressed
+      if (Key = Ord('H')) or (Key = VK_ESCAPE) then
+        FState := gsMenu;
+    end;
   end;
+
+  // Global Escape key to quit the app
+  if Key = VK_ESCAPE then
+  begin
+    if FState <> gsHighScores then // Let ESC exit high scores first
+      Close;
+  end;
+
+  Invalidate; // Force a repaint to show the state change
 end;
 
 initialization
