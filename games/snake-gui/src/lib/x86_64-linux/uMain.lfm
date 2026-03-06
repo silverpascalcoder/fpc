@@ -1,0 +1,19 @@
+object MainForm: TMainForm
+  Left = 0
+  Height = 700
+  Top = 0
+  Width = 640
+  Caption = 'Snake'
+  KeyPreview = True
+  LCLVersion = '4.99.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  object Timer1: TTimer
+    Interval = 140
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 8
+  end
+end
