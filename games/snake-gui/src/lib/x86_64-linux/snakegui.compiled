@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/home/tim/fpc-laz4/fpc/bin/x86_64-linux/fpc.sh" Date="1760834238"/>
-  <Params Value="-MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/home/tim/projects/fpc/games/my-snake-source/games/snake-gui/src/lib/x86_64-linux -Fu/home/tim/projects/fpc/games/my-snake-source/games/snake-gui/src/ -Fu/home/tim/fpc-laz4/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/home/tim/fpc-laz4/lazarus/lcl/units/x86_64-linux -Fu/home/tim/fpc-laz4/lazarus/components/freetype/lib/x86_64-linux -Fu/home/tim/fpc-laz4/lazarus/components/lazutils/lib/x86_64-linux -Fu/home/tim/fpc-laz4/lazarus/packager/units/x86_64-linux -FU/home/tim/projects/fpc/games/my-snake-source/games/snake-gui/src/lib/x86_64-linux/ -FE/home/tim/projects/fpc/games/my-snake-source/games/snake-gui/src/ -o/home/tim/projects/fpc/games/my-snake-source/games/snake-gui/src/snakegui -dLCL -dLCLgtk2 snakegui.lpr"/>
-</CONFIG>
