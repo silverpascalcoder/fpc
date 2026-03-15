@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs,
   ExtCtrls, StdCtrls, LCLType, LCLIntf,
-  uAssets, UHighScore, UGameUtils;  // TAssetManager, TSprite
+  uAssets, uFruit, UHighScore, UGameUtils;  // TAssetManager, TSprite
 
 
 
@@ -31,19 +31,22 @@ type
     FSnake: array of TPoint;
     FDirection: TDirection;
     FNextDir: TDirection;
-    FFood: TPoint;
+    FFood: TFruit;
     FScore: integer;
     FHighScore: integer;
     FHighScores: THighScoreList;
     FState: TGameState;
+    FSickMovesLeft: integer;
 
+    function ApplyDirection(ADir: TDirection): TDirection;
     procedure CheckHighScores;
     procedure DrawBMPTile(ABMP: TBitmap; ACol, ARow: integer);
     procedure DrawHallOfFame;
     procedure DrawOverlay(const AHeader, ASubText: string);
     procedure DrawTile(ASprite: TSprite; ACol, ARow: integer);
     procedure InitGame;
-    procedure PlaceFood;
+    function BgSprite: TSprite;
+    function FruitSprite: TSprite;
     procedure MoveSnake;
     function SnakeAt(APoint: TPoint): boolean;
 
@@ -51,6 +54,7 @@ type
     function GetDirection(ADX, ADY: integer): TDirection;
     procedure DrawSnake;
     function BodySprite(AIdx: integer): TSprite;
+    procedure DoPlaceFood;
   end;
 
 var
@@ -105,6 +109,7 @@ var
   Mid: integer;
 begin
   FScore := 0;
+  FSickMovesLeft := 0;
   FDirection := dirRight;
   FNextDir := dirRight;
 
@@ -114,18 +119,15 @@ begin
   FSnake[1] := TPoint.Create(GRID_W div 2, Mid);
   FSnake[2] := TPoint.Create(GRID_W div 2 - 1, Mid);  // tail
 
-  PlaceFood;
+  DoPlaceFood;
 end;
 
-procedure TMainForm.PlaceFood;
-var
-  LPoint: TPoint;
+function TMainForm.BgSprite: TSprite;
 begin
-  repeat
-    LPoint.X := Random(GRID_W);
-    LPoint.Y := Random(GRID_H);
-  until not SnakeAt(LPoint);
-  FFood := LPoint;
+  if FSickMovesLeft > 0 then
+    Result := spBgSick
+  else
+    Result := spBg;
 end;
 
 function TMainForm.SnakeAt(APoint: TPoint): boolean;
@@ -185,16 +187,24 @@ begin
       Exit;
     end;
 
-  if NewHead = FFood then
+  FFood.DecrementMoves;
+  if FSickMovesLeft > 0 then
+    Dec(FSickMovesLeft);
+
+  if FFood.IsAtLocation(NewHead) then
   begin
+    FSickMovesLeft := 0;
+    if FFood.State = fsRotten then
+      FSickMovesLeft := Random(8);
+
     // Grow: insert new head, keep tail
     SetLength(FSnake, Len + 1);
     for I := Len downto 1 do
       FSnake[I] := FSnake[I - 1];
     FSnake[0] := NewHead;
-    Inc(FScore, 10);
+    Inc(FScore, FFood.ScoreValue);
     if FScore > FHighScore then FHighScore := FScore;
-    PlaceFood;
+    DoPlaceFood;
     if Timer1.Interval > 60 then
       Timer1.Interval := Timer1.Interval - 2;
   end
@@ -204,6 +214,9 @@ begin
     for I := Len - 1 downto 1 do
       FSnake[I] := FSnake[I - 1];
     FSnake[0] := NewHead;
+
+    if FFood.IsExpired then
+      self.DoPlaceFood;
   end;
 end;
 
@@ -271,6 +284,11 @@ begin
 
   // Fallback: treat as horizontal if something unexpected occurs.
   Result := spBodyH;
+end;
+
+procedure TMainForm.DoPlaceFood;
+begin
+  FFood := SpawnFruit(@SnakeAt, GRID_W, GRID_H);
 end;
 
 
@@ -391,21 +409,22 @@ begin
   CenterText(LCanvas, FORM_H - 70, 'Press H to return to game');
 end;
 
+function TMainForm.FruitSprite: TSprite;
+begin
+  // Rotten fruit looks identical to normal -- the player can't tell.
+  case FFood.Kind of
+    fkApple : Result := spApple;
+    fkPear  : Result := spPear;
+  else        Result := spApple;
+  end;
+end;
+
 procedure TMainForm.DrawGame;
-
-const
-  S_Snake = 'SNAKE';
-  S_StartGame = 'Press SPACE to start';
-  S_Keys = 'Arrow keys / WASD to move';
-  S_Paused = 'PAUSED';
-  S_ResumeGame = 'Press SPACE to resume';
-  S_GameOver = 'GAME OVER';
-  S_PlayAgain = 'Press SPACE to play again';
-
 var
   C, R, I, Len: integer;
   LCanvas: TCanvas;
   LScore: string;
+  whichSprite: TSprite;
 begin
   LCanvas := FBuffer.Canvas;
 
@@ -420,12 +439,13 @@ begin
   LCanvas.TextOut(FORM_W - 180, 10, Format('Best: %d', [FHighScore]));
 
   // Background grid
+  whichSprite := BgSprite;
   for R := 0 to GRID_H - 1 do
     for C := 0 to GRID_W - 1 do
-      DrawTile(spBg, C, R);
+      DrawTile(whichSprite, C, R);
 
   // Food
-  DrawTile(spApple, FFood.X, FFood.Y);
+  DrawTile(FruitSprite, FFood.Location.X, FFood.Location.Y);
 
   // Snake: tail -> body -> head
   DrawSnake;
@@ -457,7 +477,29 @@ begin
   Canvas.Draw(0, 0, FBuffer);
 end;
 
+// When sick, reverse the intended direction before applying it.
+function TMainForm.ApplyDirection(ADir: TDirection): TDirection;
+begin
+  if FSickMovesLeft = 0 then
+    Exit(ADir);
+
+  case ADir of
+    dirRight : Result := dirLeft;
+    dirLeft  : Result := dirRight;
+    dirUp    : Result := dirDown;
+    dirDown  : Result := dirUp;
+  else         Result := ADir;
+  end;
+end;
+
 procedure TMainForm.FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
+
+  procedure TrySetDir(AIntended: TDirection; AOpposite: TDirection);
+  begin
+    if FDirection <> AOpposite then
+      FNextDir := ApplyDirection(AIntended);
+  end;
+
 begin
   case FState of
     { --- WE ARE AT THE START SCREEN --- }
@@ -478,17 +520,17 @@ begin
       case Key of
         VK_SPACE: FState := gsPaused;
 
-        VK_RIGHT, Ord('D'):
-          if FDirection <> dirLeft then FNextDir := dirRight;
+        VK_RIGHT, Ord('D'): TrySetDir(dirRight, dirLeft);
+          //if FDirection <> dirLeft then FNextDir := dirRight;
 
-        VK_LEFT, Ord('A'):
-          if FDirection <> dirRight then FNextDir := dirLeft;
+        VK_LEFT, Ord('A'): TrySetDir(dirLeft, dirRight);
+          //if FDirection <> dirRight then FNextDir := dirLeft;
 
-        VK_UP, Ord('W'):
-          if FDirection <> dirDown then FNextDir := dirUp;
+        VK_UP, Ord('W'): TrySetDir(dirUp, dirDown);
+          //if FDirection <> dirDown then FNextDir := dirUp;
 
-        VK_DOWN, Ord('S'):
-          if FDirection <> dirUp then FNextDir := dirDown;
+        VK_DOWN, Ord('S'): TrySetDir(dirDown, dirUp);
+          //if FDirection <> dirUp then FNextDir := dirDown;
       end;
     end;
 

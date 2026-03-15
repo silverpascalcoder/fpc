@@ -22,8 +22,12 @@ type
   TSprite = (
     // background
     spBg,
+    spBgSick,
+
     // food
     spApple,
+    spPear,
+
     // head sprites
     spHeadRight,
     spHeadLeft,
@@ -93,7 +97,9 @@ implementation
 const
   SPRITE_FILE: array[TSprite] of String = (
     'bg.png',
+    'bg_sick.png',
     'apple.png',
+    'pear.png',
     'head_right.png',
     'head_left.png',
     'head_up.png',
