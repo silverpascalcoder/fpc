@@ -81,6 +81,10 @@ end;
 
 { Strips out "noise" words to allow for natural phrasing }
 function FilterNoiseWords(const S: string): string;
+{$IFNDEF FPC}
+type
+  TStringArray = TArray<string>;
+{$ENDIF}
 var
   Words: TStringArray;
   Word, ResultStr: string;

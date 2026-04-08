@@ -7,14 +7,28 @@ unit uGameWorld;
 interface
 
 uses
-  fgl, uGameTypes, SysUtils;
+{$IFDEF FPC}
+  fgl,
+{$ELSE}
+  System.Generics.Collections,
+{$ENDIF}
+  uGameTypes,
+  SysUtils;
 
 type
+{$IFDEF FPC}
   TItemDefList = specialize TFPGList<TItemDefinition>;
   TItemInstanceList = specialize TFPGList<TItemInstance>;
   TLocationLedger = specialize TFPGList<TItemLocation>;
   TMapNodeList = specialize TFPGList<TMapNode>;
   TEnemyList = specialize TFPGList<TEnemy>;
+{$ELSE}
+  TItemDefList = TObjectList<TItemDefinition>;
+  TItemInstanceList = TObjectList<TItemInstance>;
+  TLocationLedger = TObjectList<TItemLocation>;
+  TMapNodeList = TObjectList<TMapNode>;
+  TEnemyList = TObjectList<TEnemy>;
+{$ENDIF}
 
   TGameWorld = class
   private

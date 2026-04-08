@@ -38,8 +38,9 @@ end;
 procedure HandleCommand_ShowInventory(W: TGameWorld);
 var
   Loc: TItemLocation;
-  Found: Boolean = False;
+  Found: Boolean;
 begin
+  Found := False;
   WriteLn('Inventory:');
   for Loc in W.Ledger do
   begin
@@ -58,8 +59,9 @@ var
   E: TEnemy;
   d: TDirection;
   CurrentNode: TMapNode;
-  ExitList: string = '';
+  ExitList: string;
 begin
+  ExitList := '';
   CurrentNode := W.GetCurrentNode;
 
   WriteLn('');
