@@ -1,6 +1,8 @@
 unit uParser;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 
@@ -17,7 +19,7 @@ type
 
 const
   { The Command Table: A centralized list of all valid verbs }
-  CommandTable: array[0..30] of TCommandEntry = (
+  CommandTable: array[0..20] of TCommandEntry = (
     { MOVEMENT }
     (Verb: 'go';        Command: ctMove;      HelpText: 'Move in a direction (e.g., go north)'),
     (Verb: 'walk';      Command: ctMove;      HelpText: 'Move in a direction'),
@@ -147,7 +149,6 @@ begin
     case Result.Command of
       ctMove, ctSneak: Result.Dir := GetDirection(Noun);
       ctAttack, ctTake, ctDrop, ctUse, ctLook: Result.Target := Noun;
-      ctHelp: ShowHelp; // You can now iterate through the table to print help!
     end;
   end
   else

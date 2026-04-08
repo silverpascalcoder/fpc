@@ -1,6 +1,8 @@
 unit uItemLogic;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 

@@ -1,6 +1,8 @@
 unit uEngine;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 

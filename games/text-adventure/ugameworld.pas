@@ -1,6 +1,8 @@
 unit uGameWorld;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 

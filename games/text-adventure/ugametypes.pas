@@ -1,7 +1,9 @@
 unit uGameTypes;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
 {$modeswitch advancedrecords}
+{$ENDIF}
 
 interface
 
@@ -57,7 +59,7 @@ type
   end;
 
   TCommandType = (ctMove, ctLook, ctTake, ctUse, ctInventory,
-  ctDrop, ctQuit, ctError, ctSneak, ctAttack, ctStats);
+  ctDrop, ctQuit, ctError, ctSneak, ctAttack, ctStats, ctHelp);
 
   TAction = record
     Command: TCommandType;

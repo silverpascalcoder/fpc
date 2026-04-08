@@ -1,6 +1,8 @@
 unit uCombat;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 

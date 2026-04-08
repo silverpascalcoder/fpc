@@ -1,6 +1,8 @@
 unit uOutput;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 interface
 

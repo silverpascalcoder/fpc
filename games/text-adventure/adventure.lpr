@@ -1,6 +1,8 @@
 program adventure;
 
+{$IFDEF FPC}
 {$mode ObjFPC}{$H+}
+{$ENDIF}
 
 uses
   uGameTypes, uParser, uEngine, uGameWorld, SysUtils, uOutput;
