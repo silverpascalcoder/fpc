@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="readline.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="63"/>
+        <CursorPos X="2" Y="63"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uinput.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="26" Y="117"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="readline.lpr"/>
+        <Caret Line="51" Column="4" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="readline.lpr"/>
+        <Caret Line="44" Column="18" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="readline.lpr"/>
+        <Caret Line="3" Column="15"/>
+      </Position>
+      <Position>
+        <Filename Value="readline.lpr"/>
+        <Caret Line="21" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="uinput.pas"/>
+        <Caret Line="21" Column="34"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
