@@ -4,30 +4,6 @@ An authentic, zero-boilerplate structural code generation tool built for Modern 
 
 ---
 
-## The Architecture: Feature-Rich, Doc-Poor
-
-Leveraging Free Pascal's highly efficient but undocumented `sqldbpool` core, this tool automates thread-safe connection leasing behind a reference-counted interface scope-guard:
-
-
-```
-
-[ Your Application Layer ]
-│
-▼ (Interface Scope Guard)
-[ IDBContext ] ──► Automatic reference-counted transactional cleanup
-│
-▼ (Manages Connection Leases)
-[ TDB Static Context Namespace ]
-│
-▼ (Concurrent Queue)
-[ Core FCL sqldbpool Implementation ]
-
-```
-
-When the `IDBContext` variable falls out of scope in your application flow, the Pascal runtime execution engine automatically triggers the reference destructor, rolling back uncommitted transactions and returning the socket handle to the pool without leaky manual boilerplate.
-
----
-
 ## ⚠️ Status: Pending Database Integration Testing
 
 > **NOTICE:** While the core template generation logic, code emitting blocks, and layout tokenization filters are fully verified, **the live database execution paths of the generated code have not yet been fully tested.** Ensure you validate data-type compatibility and execute mappings within an isolated staging environment before moving generated files into production workloads.
