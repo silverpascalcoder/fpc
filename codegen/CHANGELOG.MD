@@ -6,3 +6,4 @@ All notable changes to this project will be documented in this file.
 ### Known Issues (What is NOT working yet)
 - issue with line length in generated service unit
 - issue with test_*_db program missing units for driver
+- hardcoded to use Firebird and profile named 'main'
