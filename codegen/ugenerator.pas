@@ -96,7 +96,7 @@ begin
     WriteStrToFile(BaseName + 'DBMapper.pas', S);
 
   // service
-  S := GenService(T, Mode, DBPath, DBUser, DBPass);
+  S := GenService(T, Mode, 'main');
   if Mode = nmDotted then
     WriteStrToFile('Service/' + BaseName + '.pas', S)
   else
@@ -107,7 +107,7 @@ begin
   WriteStrToFile('tests/test_' + TableLower + '_json.lpr', S);
 
   // DB test
-  S := GenDBTest(T, Mode, 'main');
+  S := GenDBTest(T, Mode);
   WriteStrToFile('tests/test_' + TableLower + '_db.lpr', S);
 
   // HTMX partials

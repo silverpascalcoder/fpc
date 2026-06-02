@@ -8,20 +8,16 @@ uses
   Classes, SysUtils, db, sqldb, sqldbpool;
 
 type
-  { Public connection contract exposed to your application routes }
   IDBContext = interface
     ['{69AA6A4D-7E3C-4C9D-B1A2-F3E4D5C6B7A8}']
     function NewQuery(const ASQL: string): TSQLQuery;
     procedure Commit;
   end;
 
-  { The Master Infrastructure Namespace }
   TDB = class
   private
-    // Private static variable holding the actual shared engine pool
     class var FManager: TSQLDBConnectionManager;
   public
-    // Class methods do not require an instantiated object instance to run
     class procedure Initialize(const AConnName, ADriver, AHost, ADBName, AUser, APass: string; AMaxConns: Integer);
     class procedure Finalize;
     class function GetContext(const AConnectionName: string): IDBContext;

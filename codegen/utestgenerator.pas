@@ -8,8 +8,7 @@ uses
   Classes, SysUtils, uUtils;
 
 function GenJSONTest(const T: TTableDef; Mode: TNamingMode): string;
-function GenDBTest(const T: TTableDef; Mode: TNamingMode;
-    const DBUser, DBPass, DBPath: string): string;
+function GenDBTest(const T: TTableDef; Mode: TNamingMode): string;
 
 implementation
 
@@ -67,8 +66,7 @@ begin
 end;
 
 
-function GenDBTest(const T: TTableDef; Mode: TNamingMode;
-    const DBUser, DBPass, DBPath: string): string;
+function GenDBTest(const T: TTableDef; Mode: TNamingMode): string;
 var
   SL: TStringList;
   ModelUnit, ServiceUnit: string;
@@ -83,7 +81,7 @@ begin
     SL.Add('');
     SL.Add('{$mode objfpc}{$H+}');
     SL.Add('');
-    SL.Add('uses SysUtils, DBPool, ' + ModelUnit + ', ' + ServiceUnit + ';');
+    SL.Add('uses SysUtils, uDBContext, ' + ModelUnit + ', ' + ServiceUnit + ';');
     SL.Add('');
     SL.Add('var');
     SL.Add('  S: T' + T.UnitName + 'Service;');
@@ -99,7 +97,8 @@ begin
     SL.Add('begin');
     SL.Add('  Writeln(''--- Running DB test for ' + T.UnitName + ' ---'');');
     SL.Add('');
-    SL.Add('  TDBPool.Init(''' + DBPath + ''', ''' + DBUser + ''', ''' + DBPass + ''');');
+    SL.Add('  // Update parameters in the next line...');
+    SL.Add('  TDB.Initialize(''main'', Driver, Host, DBName, User, Password, 32);');
     SL.Add('');
     SL.Add('  S := T' + T.UnitName + 'Service.Create;');
     SL.Add('');

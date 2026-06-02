@@ -77,7 +77,7 @@ begin
     SL.Add('var DB: IDBContext; Q: TSQLQuery;');
     SL.Add('begin');
     SL.Add('  DB := TDB.GetContext(''' + APoolProfileName + ''');');
-    SL.Add('  Q := DB.NewQuery(''INSERT INTO ' + UpperCase(T.TableName) + ');
+    SL.Add('  Q := DB.NewQuery(''INSERT INTO ' + UpperCase(T.TableName) + ')');
     SL.Add('    (' + InsertFields + ') VALUES (' + InsertParams + ') RETURNING ' + T.PKDBName + ''');');
     SL.Add('  try');
 
