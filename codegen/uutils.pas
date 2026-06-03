@@ -29,6 +29,7 @@ type
 
 function SmartPascalCase(const S: string): string;
 function PascalCase(const S: string): string;
+function AsPascalType(const F: TFieldDef): string;
 function SampleValue(const F: TFieldDef; const Suffix: string): string;
 function LoadTable(const TableName, DBUser, DBPass, DBPath: string): TTableDef;
 
@@ -115,6 +116,18 @@ begin
     Result := 'Now'
   else
     Result := '''Sample''';
+end;
+
+function AsPascalType(const F: TFieldDef): string;
+begin
+  if F.PascalType = 'string' then Result := 'AsString'
+  else if F.PascalType = 'Int64' then Result := 'AsInteger'
+  else if F.PascalType = 'Boolean' then Result := 'AsBoolean'
+  else if F.PascalType = 'Double' then Result := 'AsFloat'
+  else if F.PascalType = 'TDate' then Result := 'AsDate'
+  else if F.PascalType = 'TTime' then Result := 'AsTime'
+  else if F.PascalType = 'TDateTime' then Result := 'AsDateTime'
+  else Result := 'AsString';
 end;
 
 function LoadTable(const TableName, DBUser, DBPass, DBPath: string): TTableDef;

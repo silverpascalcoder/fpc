@@ -141,7 +141,7 @@ begin
   else
     TableDef.UnitName := PascalCase(TableName);
 
-  WriteAll(TableDef, Mode, UsePool, DBUser, DBPass, DBPath, CustomName);
+  WriteAll(TableDef, Mode, DBUser, DBPass, DBPath, CustomName);
 
   Writeln('Generated ', TableDef.UnitName, ' (table: ', TableDef.TableName, ')');
   if UsePool then

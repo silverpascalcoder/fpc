@@ -77,13 +77,15 @@ begin
     SL.Add('var DB: IDBContext; Q: TSQLQuery;');
     SL.Add('begin');
     SL.Add('  DB := TDB.GetContext(''' + APoolProfileName + ''');');
-    SL.Add('  Q := DB.NewQuery(''INSERT INTO ' + UpperCase(T.TableName) + ')');
-    SL.Add('    (' + InsertFields + ') VALUES (' + InsertParams + ') RETURNING ' + T.PKDBName + ''');');
+    SL.Add('  Q := DB.NewQuery(''INSERT INTO ' + UpperCase(T.TableName) + ' '' + ');
+    SL.Add('    ''(' + InsertFields + ') '' + ');
+    SL.Add('    ''VALUES (' + InsertParams + ') '' + ');
+    SL.Add('    ''RETURNING ' + T.PKDBName + ''');');
     SL.Add('  try');
 
     for F in T.Fields do
       if not SameText(F.DBName, T.PKDBName) then
-        SL.Add('    Q.ParamByName(''' + F.DBName + ''').AsString := R.' + F.Name + ';');
+        SL.Add('    Q.ParamByName(''' + F.DBName + ''').' + AsPascalType(F) + ' := R.' + F.Name + ';');
 
     SL.Add('    Q.Open;');
     SL.Add('    Result := Q.FieldByName(''' + T.PKDBName + ''').AsLargeInt;');
@@ -125,7 +127,7 @@ begin
     SL.Add('  try');
 
     for F in T.Fields do
-      SL.Add('    Q.ParamByName(''' + F.DBName + ''').AsString := R.' + F.Name + ';');
+      SL.Add('    Q.ParamByName(''' + F.DBName + ''').' + AsPascalType(F) + ' := R.' + F.Name + ';');
 
     SL.Add('    Q.ExecSQL;');
     SL.Add('    Result := Q.RowsAffected > 0;');

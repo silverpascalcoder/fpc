@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, StrUtils, uUtils, uFileWriter, uHTMXGenerator,
   uServiceGenerator, uDBPoolGenerator, uTestGenerator, uMapperGenerator;
 
-procedure WriteAll(const T: TTableDef; Mode: TNamingMode; UsePool: Boolean;
+procedure WriteAll(const T: TTableDef; Mode: TNamingMode;
   const DBUser, DBPass, DBPath: string; const PrettyName: string);
 
 implementation
@@ -66,7 +66,7 @@ begin
 end;
 
 
-procedure WriteAll(const T: TTableDef; Mode: TNamingMode; UsePool: Boolean;
+procedure WriteAll(const T: TTableDef; Mode: TNamingMode;
   const DBUser, DBPass, DBPath: string; const PrettyName: string);
 var
   BaseName, TableLower: string;
@@ -107,7 +107,7 @@ begin
   WriteStrToFile('tests/test_' + TableLower + '_json.lpr', S);
 
   // DB test
-  S := GenDBTest(T, Mode);
+  S := GenDBTest(T, Mode, DBUser, DBPass, DBPath);
   WriteStrToFile('tests/test_' + TableLower + '_db.lpr', S);
 
   // HTMX partials
@@ -117,9 +117,6 @@ begin
   WriteStrToFile('partials/' + TableLower + '_form_fields.mustache', GenHTMXFormFields(T, PrettyName));
   WriteStrToFile('partials/' + TableLower + '_form.mustache', GenHTMXForm(T, PrettyName));
   WriteStrToFile('partials/' + TableLower + '_form_wrapper.mustache', GenHTMXFormWrapper(T, PrettyName));
-
-  if UsePool then
-    WriteStrToFile('DBPool.pas', GenDBPoolUnit(DBPath, DBUser, DBPass));
 end;
 
 end.
