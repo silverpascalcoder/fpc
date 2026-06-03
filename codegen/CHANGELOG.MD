@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 - (test_*_db program) update parameters to connect to database
 - (test_*_db program) missing units for driver
 - (uservicegererator unit) fix field types when setting parameters
+### Known Issues (What is NOT working yet) 
+- error in call to TDB.Initialize re host and database name
 
 ## [Unreleased] - 2026-06-02
 ### Known Issues (What is NOT working yet) 
