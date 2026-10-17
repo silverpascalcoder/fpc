@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Lazarus>
+    <ColorSchemes Version="13">
+      <Names Count="1">
+        <Item1 Value="Tim-dark-theme"/>
+      </Names>
+      <Globals Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="10346361" Style="fsBold"/>
+          <ahaCaretColor Foreground="3617072" Background="3617072"/>
+          <ahaCodeFoldingTree Foreground="5592148"/>
+          <ahaCodeFoldingTreeCurrent Foreground="10346361"/>
+          <ahaDefault Foreground="13947603" Background="1118481"/>
+          <ahaDisabledBreakpoint Background="1513262"/>
+          <ahaEnabledBreakpoint Background="2237024"/>
+          <ahaErrorLine Background="1908044"/>
+          <ahaExecutionPoint Background="2573095"/>
+          <ahaFoldedCode Foreground="6782598" FrameColor="4934219"/>
+          <ahaFoldedCodeLine Background="2105376"/>
+          <ahaGutter Background="1447446"/>
+          <ahaGutterCurrentLine Background="2105376"/>
+          <ahaGutterNumberCurrentLine Foreground="11381676"/>
+          <ahaGutterSeparator Foreground="3026222" Background="1447446"/>
+          <ahaHiddenCodeLine Background="2105376"/>
+          <ahaHighlightAll Background="5981293"/>
+          <ahaHighlightWord Background="2631720"/>
+          <ahaIdentComplRecent Foreground="13342568"/>
+          <ahaIdentComplWindow Foreground="13947603" Background="1447446"/>
+          <ahaIdentComplWindowBorder Foreground="4934219"/>
+          <ahaIdentComplWindowEntryConst Foreground="12026847"/>
+          <ahaIdentComplWindowEntryEnum Foreground="10141153"/>
+          <ahaIdentComplWindowEntryFunc Foreground="10346361"/>
+          <ahaIdentComplWindowEntryIdent Foreground="13947603"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="10346361"/>
+          <ahaIdentComplWindowEntryLabel Foreground="12026847"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="7578202"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="5732421"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="6782598"/>
+          <ahaIdentComplWindowEntryProc Foreground="10346361"/>
+          <ahaIdentComplWindowEntryProp Foreground="13342568"/>
+          <ahaIdentComplWindowEntryTempl Foreground="13342568"/>
+          <ahaIdentComplWindowEntryText Foreground="8815749"/>
+          <ahaIdentComplWindowEntryType Foreground="10141153"/>
+          <ahaIdentComplWindowEntryUnit Foreground="6782598"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="7500146"/>
+          <ahaIdentComplWindowEntryVar Foreground="13020121"/>
+          <ahaIdentComplWindowHighlight Foreground="10346361"/>
+          <ahaIdentComplWindowSelection Background="4348213"/>
+          <ahaIfDefBlockInactive Foreground="6250078"/>
+          <ahaIfDefNodeInactive Foreground="6250078"/>
+          <ahaIncrementalSearch Foreground="13947603" Background="6573368"/>
+          <ahaInvalidBreakpoint Background="1719116"/>
+          <ahaLineHighlight Background="1842204"/>
+          <ahaLineNumber Foreground="6842216"/>
+          <ahaModifiedLine Foreground="8762501" FrameColor="12026847"/>
+          <ahaMouseLink Foreground="10346361" FrameColor="10346361"/>
+          <ahaOutlineLevel10Color Foreground="9609124" MarkupFoldLineColor="9609124"/>
+          <ahaOutlineLevel1Color Foreground="10346361" MarkupFoldLineColor="10346361"/>
+          <ahaOutlineLevel2Color Foreground="13342568" MarkupFoldLineColor="13342568"/>
+          <ahaOutlineLevel3Color Foreground="12026847" MarkupFoldLineColor="12026847"/>
+          <ahaOutlineLevel4Color Foreground="10141153" MarkupFoldLineColor="10141153"/>
+          <ahaOutlineLevel5Color Foreground="6782598" MarkupFoldLineColor="6782598"/>
+          <ahaOutlineLevel6Color Foreground="11786909" MarkupFoldLineColor="11786909"/>
+          <ahaOutlineLevel7Color Foreground="13545106" MarkupFoldLineColor="13545106"/>
+          <ahaOutlineLevel8Color Foreground="12755675" MarkupFoldLineColor="12755675"/>
+          <ahaOutlineLevel9Color Foreground="11650524" MarkupFoldLineColor="11650524"/>
+          <ahaOverviewGutter Background="1579032"/>
+          <ahaRightMargin Foreground="3026222"/>
+          <ahaSpecialVisibleChars Foreground="4934219"/>
+          <ahaSyncroEditArea Background="2105376"/>
+          <ahaSyncroEditCur FrameColor="10346361"/>
+          <ahaSyncroEditOther FrameColor="10141153"/>
+          <ahaSyncroEditSync FrameColor="13342568"/>
+          <ahaTemplateEditCur FrameColor="10346361"/>
+          <ahaTemplateEditOther FrameColor="10141153"/>
+          <ahaTemplateEditSync FrameColor="13342568"/>
+          <ahaTextBlock Background="3886640"/>
+          <ahaTopInfoHint Foreground="13947603" Background="1842204"/>
+          <ahaUnknownBreakpoint Background="1518904"/>
+          <ahaWordGroup FrameColor="7230524"/>
+        </SchemeTim_dark_theme>
+      </Globals>
+      <LangObjectPascal Version="13">
+        <SchemeTim_dark_theme>
+          <ahaOutlineLevel10Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color MarkupFoldLineColor="clNone"/>
+          <Assembler Foreground="13218775"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Directive Foreground="10141153" Style="fsItalic"/>
+          <IDE_Directive Foreground="11256797"/>
+          <Identifier Foreground="13947603"/>
+          <Modifier Foreground="10346361"/>
+          <Number Foreground="12026847"/>
+          <Procedure_header_name Foreground="12507055" Style="fsBold"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangObjectPascal>
+      <LangHTML_document Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Asp Foreground="clBlack" Background="clYellow"/>
+          <CDATA Foreground="clGreen"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <DOCTYPE Foreground="clBlack" Background="clYellow" Style="fsBold"/>
+          <Escape_ampersand Foreground="clLime" Style="fsBold"/>
+          <Identifier Style="fsBold"/>
+          <Reserved_word Foreground="16711808" Style="fsBold"/>
+          <Symbol Style="fsBold"/>
+          <Unknown_word Foreground="clRed" Style="fsBold"/>
+          <Value Foreground="16744448"/>
+        </SchemeTim_dark_theme>
+      </LangHTML_document>
+      <LangC__ Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Assembler Foreground="13218775"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Number Foreground="12026847"/>
+          <Preprocessor Foreground="6782598" Style="fsItalic"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangC__>
+      <LangXML_document Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Attribute_Name Foreground="clMaroon"/>
+          <Attribute_Value Foreground="clNavy" Style="fsBold"/>
+          <CDATA_Section Foreground="clOlive" Style="fsItalic"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <DOCTYPE_Section Foreground="clBlue" Style="fsItalic"/>
+          <Element_Name Foreground="clMaroon" Style="fsBold"/>
+          <Entity_Reference Foreground="clBlue" Style="fsBold"/>
+          <Namespace_Attribute_Name Foreground="clRed"/>
+          <Namespace_Attribute_Value Foreground="clRed" Style="fsBold"/>
+          <Processing_Instruction Foreground="clBlue" Background="clDefault" FrameColor="clDefault" ForePriority="100" BackPriority="100" FramePriority="100" BoldPriority="100" ItalicPriority="100" UnderlinePriority="100" StrikeOutPriority="100" StyleMask="fsBold,fsItalic,fsUnderline,fsStrikeOut"/>
+          <Processing_Instruction_Symbol Foreground="clBlue" ForePriority="150" BackPriority="150" FramePriority="150" BoldPriority="150" ItalicPriority="150" UnderlinePriority="150" StrikeOutPriority="150"/>
+          <Symbol Foreground="13096381"/>
+          <Text Foreground="13947603"/>
+        </SchemeTim_dark_theme>
+      </LangXML_document>
+      <LangLazarus_Form_definition Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Key Foreground="10346361" Style="fsBold"/>
+          <Number Foreground="12026847"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangLazarus_Form_definition>
+      <LangPerl Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Pragma Style="fsBold"/>
+          <Reserved_word Style="fsBold"/>
+          <Space Foreground="clWindow"/>
+          <Symbol Foreground="13096381"/>
+          <Variable Style="fsBold"/>
+        </SchemeTim_dark_theme>
+      </LangPerl>
+      <LangJava Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Documentation Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangJava>
+      <LangUNIX_Shell_Script Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Foreground="clNavy" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+          <Unknown_word Foreground="clGray"/>
+          <Variable Foreground="13947603"/>
+        </SchemeTim_dark_theme>
+      </LangUNIX_Shell_Script>
+      <LangPython Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Documentation Foreground="6782598" Style="fsItalic"/>
+          <Float Foreground="clBlue"/>
+          <Hexadecimal Foreground="clBlue"/>
+          <Identifier Foreground="13947603"/>
+          <Non_reserved_keyword Foreground="clNavy" Style="fsBold"/>
+          <Number Foreground="12026847"/>
+          <Octal Foreground="clBlue"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+          <SyntaxError Foreground="clRed"/>
+          <System_functions_and_variables Style="fsBold"/>
+        </SchemeTim_dark_theme>
+      </LangPython>
+      <LangPHP Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+          <Variable Foreground="13947603"/>
+        </SchemeTim_dark_theme>
+      </LangPHP>
+      <LangSQL Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Data_type Style="fsBold"/>
+          <Default_packages Style="fsBold"/>
+          <Exception Style="fsItalic"/>
+          <Function Style="fsBold"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Style="fsBold"/>
+          <Reserved_word__PL_SQL_ Style="fsBold"/>
+          <SQL_Plus_command Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+          <Variable Foreground="13947603"/>
+        </SchemeTim_dark_theme>
+      </LangSQL>
+      <LangCascading_style_sheets Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Key Style="fsBold"/>
+          <Number Foreground="12026847"/>
+          <Selector Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangCascading_style_sheets>
+      <LangJavascript Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Brackets Style="fsBold"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangJavascript>
+      <LangDiff_File Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Diff_Added_line Foreground="clGreen"/>
+          <Diff_Changed_Line Foreground="clPurple"/>
+          <Diff_Chunk_Line_Counts Foreground="clPurple" Style="fsBold"/>
+          <Diff_Chunk_Marker Style="fsBold"/>
+          <Diff_Chunk_New_Line_Count Foreground="clGreen" Style="fsBold"/>
+          <Diff_Chunk_Original_Line_Count Foreground="clRed" Style="fsBold"/>
+          <Diff_New_File Background="clGreen" Style="fsBold"/>
+          <Diff_Original_File Background="clRed" Style="fsBold"/>
+          <Diff_Removed_Line Foreground="clRed"/>
+          <Unknown_word Style="fsItalic"/>
+        </SchemeTim_dark_theme>
+      </LangDiff_File>
+      <LangMS_DOS_batch_language Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="clNavy" Style="fsItalic"/>
+          <Key Style="fsBold"/>
+          <Number Foreground="clBlue"/>
+          <Variable Foreground="clGreen"/>
+        </SchemeTim_dark_theme>
+      </LangMS_DOS_batch_language>
+      <LangINI_file Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="clGreen" Style="fsItalic"/>
+          <Key Foreground="clBlue"/>
+          <Section Style="fsBold"/>
+          <Symbol Foreground="clRed"/>
+        </SchemeTim_dark_theme>
+      </LangINI_file>
+      <Langpo_language_files Version="13"/>
+      <LangPike Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <Comment Foreground="6782598" Style="fsItalic"/>
+          <Documentation Foreground="6782598" Style="fsItalic"/>
+          <Identifier Foreground="13947603"/>
+          <Number Foreground="12026847"/>
+          <Reserved_word Foreground="10346361" Style="fsBold"/>
+          <String Foreground="13342568" Background="2695708"/>
+          <Symbol Foreground="13096381"/>
+        </SchemeTim_dark_theme>
+      </LangPike>
+      <LangPlain_Text Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+        </SchemeTim_dark_theme>
+      </LangPlain_Text>
+      <LangMarkdown Version="13">
+        <SchemeTim_dark_theme>
+          <ahaBracketMatch FrameColor="clNone" Style=""/>
+          <ahaCaretColor Foreground="clNone" Background="clNone"/>
+          <ahaCodeFoldingTree Foreground="clNone"/>
+          <ahaCodeFoldingTreeCurrent Foreground="clNone"/>
+          <ahaDefault Foreground="clNone" Background="clNone"/>
+          <ahaDisabledBreakpoint Background="clNone"/>
+          <ahaEnabledBreakpoint Background="clNone"/>
+          <ahaErrorLine Background="clNone"/>
+          <ahaExecutionPoint Background="clNone"/>
+          <ahaFoldedCode Foreground="clNone" FrameColor="clNone"/>
+          <ahaFoldedCodeLine Background="clNone"/>
+          <ahaGutter Background="clNone"/>
+          <ahaGutterCurrentLine Background="clNone"/>
+          <ahaGutterNumberCurrentLine Foreground="clNone"/>
+          <ahaGutterSeparator Foreground="clNone" Background="clNone"/>
+          <ahaHiddenCodeLine Background="clNone"/>
+          <ahaHighlightAll Background="clNone"/>
+          <ahaHighlightWord Background="clNone"/>
+          <ahaIdentComplRecent Foreground="clNone"/>
+          <ahaIdentComplWindow Foreground="clNone" Background="clNone"/>
+          <ahaIdentComplWindowBorder Foreground="clNone"/>
+          <ahaIdentComplWindowEntryConst Foreground="clNone"/>
+          <ahaIdentComplWindowEntryEnum Foreground="clNone"/>
+          <ahaIdentComplWindowEntryFunc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryIdent Foreground="clNone"/>
+          <ahaIdentComplWindowEntryKeyword Foreground="clNone"/>
+          <ahaIdentComplWindowEntryLabel Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethAbstract Foreground="clNone"/>
+          <ahaIdentComplWindowEntryMethodLowVis Foreground="clNone"/>
+          <ahaIdentComplWindowEntryNameSpace Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProc Foreground="clNone"/>
+          <ahaIdentComplWindowEntryProp Foreground="clNone"/>
+          <ahaIdentComplWindowEntryTempl Foreground="clNone"/>
+          <ahaIdentComplWindowEntryText Foreground="clNone"/>
+          <ahaIdentComplWindowEntryType Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnit Foreground="clNone"/>
+          <ahaIdentComplWindowEntryUnknown Foreground="clNone"/>
+          <ahaIdentComplWindowEntryVar Foreground="clNone"/>
+          <ahaIdentComplWindowHighlight Foreground="clNone"/>
+          <ahaIdentComplWindowSelection Background="clNone"/>
+          <ahaIncrementalSearch Foreground="clNone" Background="clNone"/>
+          <ahaInvalidBreakpoint Background="clNone"/>
+          <ahaLineHighlight Background="clNone"/>
+          <ahaLineNumber Foreground="clNone"/>
+          <ahaModifiedLine Foreground="clNone" FrameColor="clNone"/>
+          <ahaMouseLink Foreground="clNone" FrameColor="clNone"/>
+          <ahaOutlineLevel10Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel1Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel2Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel3Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel4Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel5Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel6Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel7Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel8Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOutlineLevel9Color Foreground="clNone" MarkupFoldLineColor="clNone"/>
+          <ahaOverviewGutter Background="clNone"/>
+          <ahaRightMargin Foreground="clNone"/>
+          <ahaSpecialVisibleChars Foreground="clNone"/>
+          <ahaSyncroEditArea Background="clNone"/>
+          <ahaSyncroEditCur FrameColor="clNone"/>
+          <ahaSyncroEditOther FrameColor="clNone"/>
+          <ahaSyncroEditSync FrameColor="clNone"/>
+          <ahaTemplateEditCur FrameColor="clNone"/>
+          <ahaTemplateEditOther FrameColor="clNone"/>
+          <ahaTemplateEditSync FrameColor="clNone"/>
+          <ahaTextBlock Background="clNone"/>
+          <ahaTopInfoHint Foreground="clNone" Background="clNone"/>
+          <ahaUnknownBreakpoint Background="clNone"/>
+          <ahaWordGroup FrameColor="clNone"/>
+          <BlockQuote Foreground="clGreen"/>
+          <Bold Style="fsBold"/>
+          <CodeBlock Foreground="clBlue"/>
+          <CodeInline Foreground="clRed" Background="clSilver"/>
+          <Header Foreground="clMaroon" Style="fsBold"/>
+          <Italic Style="fsItalic"/>
+          <Link Foreground="clBlue" Style="fsUnderline"/>
+          <List Foreground="clNavy" Style="fsBold"/>
+        </SchemeTim_dark_theme>
+      </LangMarkdown>
+      <LangWatches_Locals Version="13">
+        <SchemeTim_dark_theme>
+          <WatchValueDisabled Foreground="clGray"/>
+          <WatchValueEllipsis Foreground="clGray"/>
+          <WatchValueError Foreground="clRed"/>
+          <WatchValueEval Foreground="clGray"/>
+          <WatchValueFoundStackFrame Foreground="clFuchsia"/>
+          <WatchValueShadowLast Foreground="clWhite" ForeAlpha="128" StyleMask="fsBold,fsItalic,fsUnderline,fsStrikeOut"/>
+          <WatchValueUnknown Foreground="clGray"/>
+        </SchemeTim_dark_theme>
+      </LangWatches_Locals>
+      <LangDisassembler_Window Version="13">
+        <SchemeTim_dark_theme>
+          <ahaAsmSourceFunc Foreground="10346361" Style="fsBold"/>
+          <ahaAsmSourceLine Foreground="10346361" Style="fsBold"/>
+          <ahaDefault Foreground="15394534" Background="1775383"/>
+          <ahaLineHighlight Background="2564899"/>
+          <ahaMouseLink Foreground="6149864" FrameColor="6149864"/>
+          <ahaTextBlock Background="3035221" Features=""/>
+        </SchemeTim_dark_theme>
+      </LangDisassembler_Window>
+    </ColorSchemes>
+  </Lazarus>
+</CONFIG>
