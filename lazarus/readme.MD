@@ -1,1 +1,0 @@
-Lazarus Color Scheme
